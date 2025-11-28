@@ -20,11 +20,6 @@
 .video-preview:hover{
     box-shadow: 0 0 8px 3px rgba(96, 96, 96, 0.168);
 }
-p{
-    font-family: "Roboto, Arial";
-    margin-top: 0;
-    margin-bottom: 0;
-}
 .vid-title,.vid-creator,.vid-stats{
     margin-top: 0;
     margin-bottom: 0;
