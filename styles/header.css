@@ -11,6 +11,7 @@
     left:0;
     right:0;
     height: 55px;
+    z-index: 1000;
 }
 
 
@@ -54,11 +55,13 @@
     font-family: Roboto, Arial;
     font-size: 16px;
 }
-.search-bar:enabled{
+.search-bar:focus{
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(191, 191, 191);
+    border-color: rgb(36, 143, 214);
     border-radius: 2px;
+    outline:none; /*IMP*/
+    z-index:1;
 }
 .search-button{
     height: 40px;
