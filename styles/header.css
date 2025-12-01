@@ -5,6 +5,12 @@
     justify-content: space-between;
     align-items: stretch;
     background-color: white;
+    box-shadow: 0 -0.3px 0 rgb(112, 112, 112) inset;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 55px;
 }
 
 
@@ -14,12 +20,13 @@
 }
 .hamburger-menu{
     height: 24px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
     cursor: pointer;
 }
 .youtube-logo{
     height: 20px;
+    margin-left: 10px;
 }
 
 
@@ -127,9 +134,9 @@
 
 
 
-.line{
+/*.line{
     height: 0.5px;
     border: none;
     width: 100%;
     background-color: rgb(197, 197, 197);
-}
+}*/
