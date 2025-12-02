@@ -12,6 +12,10 @@ body{
     padding-left: 76px;
     font-family: "Roboto", "Arial";
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 
 
 

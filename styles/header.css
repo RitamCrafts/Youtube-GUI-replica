@@ -75,6 +75,7 @@
     margin-left: -1px;
     margin-right: 10px;
     cursor: pointer;
+    position:relative;
 }
 .search-button:hover{
     background-color: rgb(237, 237, 237);
@@ -92,6 +93,7 @@
     justify-content: center;
     background-color: rgb(244, 244, 244);
     cursor: pointer;
+    position: relative;
 }
 .voice-search-icon-button:hover{
     background-color: rgb(236, 236, 236);
@@ -131,6 +133,7 @@
 .my-channel-profile-container{
     margin-left: 15px;
     margin-right: 19px;
+    position: relative;
 }
 .notifications-container,.youtube-apps-container,.upload-container{
     margin-left: 15px;
@@ -153,6 +156,45 @@
     border-color: white;
 }
 
+
+.tooltip{
+    background-color: rgb(97, 97, 97);
+    color: white;
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-size: 12px;
+    position: absolute;
+    bottom:-23px;
+    right:-40px;
+    opacity: 0;
+    width:max-content;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+    right: -10px;
+}
+.notifications-container:hover .tooltip{
+    opacity:1;
+    right:-40px;
+}
+.voice-search-icon-button:hover .tooltip{
+    opacity:1;
+    right: -55px;
+}
+.upload-container:hover .tooltip{
+    opacity: 1;
+    right: initial;
+    left:-10px;
+}
+.youtube-apps-container:hover .tooltip{
+    opacity: 1;
+}
+.my-channel-profile-container:hover .tooltip{
+    opacity:1;
+    right: 1px;
+}
 
 
 

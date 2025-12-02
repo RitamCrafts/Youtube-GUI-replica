@@ -29,19 +29,20 @@
             </div>
             <div class="header-middle-section">
                 <input type="text" placeholder="Search" class="search-bar">
-                <button class="search-button"><img src="icons/search.svg" class="search"></button>
-                <button class="voice-search-icon-button"><img src="icons/voice-search-icon.svg" class="voice-search-icon"></button>
+                <button class="search-button"><img src="icons/search.svg" class="search"><div class="tooltip">Search</div></button>
+                <button class="voice-search-icon-button"><img src="icons/voice-search-icon.svg" class="voice-search-icon"><div class="tooltip">Search with Voice</div></button>
             </div>
             <div class="header-right-section">
-                <div class="upload-container"><img src="icons/upload.svg" class="upload"></div>
-                <div class="youtube-apps-container"><img src="icons/youtube-apps.svg" class="youtube-apps"></div>
+                <div class="upload-container"><img src="icons/upload.svg" class="upload"><div class="tooltip">Upload</div></div>
+                <div class="youtube-apps-container"><img src="icons/youtube-apps.svg" class="youtube-apps"><div class="tooltip">Youtube Apps</div></div>
                 <div class="notifications-container">
                     <img src="icons/notifications.svg" class="notifications">
                     <div class="notifications-count">
                         <div>3</div>
                     </div>
+                    <div class="tooltip">Notifications</div>
                 </div>
-                <div class="my-channel-profile-container"><img src="channel-pictures/ionic_profile.jpg" class="my-channel-profile"></div>
+                <div class="my-channel-profile-container"><img src="channel-pictures/ionic_profile.jpg" class="my-channel-profile"><div class="tooltip">You</div></div>
             </div>
 
         </div> 
@@ -107,10 +108,14 @@
         </div>
 
 
+
+
+
         <div class="vids-container">
             <div class="gridder">
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -120,39 +125,174 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -162,39 +302,174 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -204,39 +479,174 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -246,39 +656,174 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -288,39 +833,174 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -330,39 +1010,174 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
 
                 <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
@@ -372,37 +1187,1768 @@
                         display:grid;
                         grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-1.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                                <p class="vid-creator">Marques Brownlee</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
                                 <p class="vid-stats">3.4M views &#183; 6 months ago</p>
                             </div>
 
                         </div>
                     </div>
+                    </a>
                 </div>
 
-                
                 <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
                     <div class="video-preview">
                         <div class="thumbnail-row">
                             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-                            <div class="timestamp">8:22</div>
+                            <div class="timestamp">8:21</div>
                         </div>
                         <div style="
-                            display: grid;
-                            grid-template-columns: 50px 1fr;
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
                         ">
-                            <div class="channel-picture"><img src="channel-pictures/channel-2.jpeg" class="profile-pic"></div>
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="video-info">
                                 <p class="vid-title">Try Not To Laugh Challenge #9</p>
-                                <p class="vid-creator">Markiplier</p>
-                                <p class="vid-stats">19M views &#183; 4 years ago</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
                             </div>
+
                         </div>
                     </div>
+                    </a>
                 </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+
+                
+                <div>
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                            <div class="timestamp">14:20</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-1.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-1.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Marques Brownlee</p>
+                                            <p class="tooltip-sub-count">20.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Marques Brownlee</span></p>
+                                <p class="vid-stats">3.4M views &#183; 6 months ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                            <div class="timestamp">8:21</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-2.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-2.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Markiplier</p>
+                                            <p class="tooltip-sub-count">37.9M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Try Not To Laugh Challenge #9</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Markiplier</span></p>
+                                <p class="vid-stats">21M views &#183; 8 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-3.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-3.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">Veritasium</p>
+                                            <p class="tooltip-sub-count">19.6M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">The Simplest Math Problem No One Can Solve - Collatz ...</p>
+                                <p class="vid-creator"><span class="vid-creator-text">Veritasium</span></p>
+                                <p class="vid-stats">44M views &#183; 4 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                            <div class="timestamp">22:08</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-4.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-4.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">MrBeast</p>
+                                            <p class="tooltip-sub-count">453M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Anything You Can Fit In The Circle I'll Pay For</p>
+                                <p class="vid-creator"><span class="vid-creator-text">MrBeast</span></p>
+                                <p class="vid-stats">328M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y">
+                    <div class="video-preview">
+                        <div class="thumbnail-row">
+                            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                            <div class="timestamp">10:13</div>
+                        </div>
+                        <div style="
+                        display:grid;
+                        grid-template-columns: 50px 1fr;
+                        ">
+                            <div class="channel-picture">
+                                <div class="profile-pic-container">
+                                    <img src="channel-pictures/channel-5.jpeg" class="profile-pic">
+                                    <div class="channel-picture-tooltip">
+                                        <img src="channel-pictures/channel-5.jpeg" class="tooltip-profile-pic">
+                                        <div>
+                                            <p class="tooltip-channel-name">RealLifeLore</p>
+                                            <p class="tooltip-sub-count">7.8M subscribers</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <p class="vid-title">Why Planes Don't Fly Over Tibet</p>
+                                <p class="vid-creator"><span class="vid-creator-text">RealLifeLore</span></p>
+                                <p class="vid-stats">8.4M views &#183; 5 years ago</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                
+
+                
+                
+
+ 
 
 
             </div>  
