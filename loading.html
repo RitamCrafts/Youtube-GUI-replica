@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A youtube loading gui alternative by Ritam. This was used to learn css animation. Project idea and all references by SuperSimpleDev and Coding2Go.">
+        <meta name="author" content="Ritam Mandal">
+        <meta name="theme-color" content="#ffcccc">
+        <meta property="og:title" content="Youtube loading GUI alternative by RitamCrafts">
+        <meta property="og:description" content="This is a yt gui loading alternative made by Ritam Mandal to learn css animation.">
+        <meta property="og:image" content="icons/share-img.png">
+        <title>Finding</title>
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/loading-styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            .loading{
+                height: 36px;
+                width: 36px;
+                border-color: rgb(212, 48, 48);
+                border-style: solid;
+                border-width: 4px;
+                border-radius: 3px;
+                box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.142), 0 0 6px rgba(255, 0, 0, 0.142) ;
+                position: absolute;
+                bottom:50%;
+                left:50%;
+                top:initial;
+                translate: -50% 0%;
+                animation-duration: 4s;
+                animation-name: loader-animation;
+                animation-delay: 0.8s;
+                animation-direction: normal;
+                animation-play-state: running;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+            }
+        </style>
+    </head>
+
+
+    <body style="padding-top: 55px;">
+        <div class="header">
+            <div class="header-left-section">
+                <img src="icons/hamburger-menu.svg" class="hamburger-menu">
+                <img src="icons/youtube-logo.svg" class="youtube-logo">
+            </div>
+            <div class="header-middle-section">
+                <input type="text" placeholder="Search" class="search-bar">
+                <a href="loading.html"><button class="search-button"><img src="icons/search.svg" class="search"><div class="tooltip">Search</div></button></a>
+                <button class="voice-search-icon-button"><img src="icons/voice-search-icon.svg" class="voice-search-icon"><div class="tooltip">Search with Voice</div></button>
+            </div>
+            <div class="header-right-section">
+                <div class="upload-container"><img src="icons/upload.svg" class="upload"><div class="tooltip">Upload</div></div>
+                <div class="youtube-apps-container"><img src="icons/youtube-apps.svg" class="youtube-apps"><div class="tooltip">Youtube Apps</div></div>
+                <div class="notifications-container">
+                    <img src="icons/notifications.svg" class="notifications">
+                    <div class="notifications-count">
+                        <div>3</div>
+                    </div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <div class="my-channel-profile-container"><img src="channel-pictures/ionic_profile.jpg" class="my-channel-profile"><div class="tooltip">You</div></div>
+            </div>
+        </div>
+        
+
+
+        
+        <div class="loading"></div>
+
+
+
+
+        <div class="footer">
+            <div class="footer-link">
+                <img src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="footer-link">
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="footer-link">
+                <div class="footer-explore"><img src="icons/explore.svg" class="footer-explore-img"></div>
+                <div>Explore</div>
+            </div>
+            <div class="footer-link">
+                <img src="icons/upload.svg">
+                <div>Create</div>
+            </div>
+            <div class="footer-link">
+                <img src="channel-pictures/ionic_profile.jpg" class="footer-my-pic">
+                <div>You</div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>
